@@ -5,38 +5,39 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    char torre[15]= "torre";
+  char torre[15]= "torre";
 	char rainha[15]= "rainha";
 	char bisbo[15]= "bisbo";
 	int i = 0;
 	int j = 0;
-
-	while (i < 5){
-	 printf("%s: cima e direita\n", bisbo);
+    int l = 1 ;
+	int m ;
+	
+	while (i < 5)
+	{
+	   printf("%s: cima e direita\n", bisbo);
 	 i++;	
 	}
 	
 	do {
-		printf("%s: esquerda\n", rainha);
+       printf("%s: esquerda\n", rainha);
 		j++;
 	}while(j < 8);
 		
-	for (int k = 0; k < 5; k++){
-		printf("%s: direita\n", torre);
+	for (int k = 0; k < 5; k++)
+	   printf("%s: direita\n", torre);
+	
+	printf("\n");
+	
+	while(l-- )
+	{
+		for(m = 0; m < 2; m++ ){
+			printf("cavalo: baixo\n");
+		}
+	printf("cavalo: esquerda\n");	
 	}
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
